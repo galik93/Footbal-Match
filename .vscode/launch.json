@@ -9,7 +9,7 @@
             "name": "football_match",
             "request": "launch",
             "type": "dart",
-            "program": "lib/app/main.dart"
+            "program": "lib/main.dart"
         },
         {
             "name": "football_match (profile mode)",

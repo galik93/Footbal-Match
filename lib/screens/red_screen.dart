@@ -1,18 +1,19 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:football_match/utils/constants.dart';
 
 class RedScreen extends StatefulWidget {
   const RedScreen({Key? key}) : super(key: key);
 
   @override
-  _RedScreenState createState() => _RedScreenState();
+  RedScreenState createState() => RedScreenState();
 }
 
-class _RedScreenState extends State<RedScreen> {
+class RedScreenState extends State<RedScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pop(context);
     });
   }
@@ -20,8 +21,8 @@ class _RedScreenState extends State<RedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red.shade300,
-      body: Center(),
+      backgroundColor: kRedColor,
+      body: const Center(),
     );
   }
 }

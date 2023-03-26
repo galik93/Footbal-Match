@@ -1,18 +1,19 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:football_match/utils/constants.dart';
 
 class YellowScreen extends StatefulWidget {
   const YellowScreen({Key? key}) : super(key: key);
 
   @override
-  _YellowScreenState createState() => _YellowScreenState();
+  YellowScreenState createState() => YellowScreenState();
 }
 
-class _YellowScreenState extends State<YellowScreen> {
+class YellowScreenState extends State<YellowScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pop(context);
     });
   }
@@ -20,8 +21,8 @@ class _YellowScreenState extends State<YellowScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow.shade300,
-      body: Center(),
+      backgroundColor: kYellowColor,
+      body: const Center(),
     );
   }
 }
